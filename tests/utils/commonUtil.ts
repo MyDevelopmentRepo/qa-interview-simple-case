@@ -10,4 +10,7 @@ export async function checkBttnEnabledAndClick(locator: Locator) {
     await expect(locator).toBeEnabled();
     await locator.click();
 }
-
+export async function checkLinkVisibleAndClick(locator: Locator) {
+    await expect(locator).toBeVisible();
+    await locator.click();
+}
